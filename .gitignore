@@ -1,21 +1,19 @@
-# Vivado 자동 생성 파일 및 폴더
+# Vivado 자동 생성 폴더
 *.cache/
 *.hw/
 *.ip_user_files/
 *.runs/
 *.sim/
 *.gen/
-*.jou
+
+# Vivado 로그 및 임시 파일
 *.log
+*.jou
 *.pb
 *.wcfg
+*.str
+*.bak
 
-# 유지할 파일
-!*.v
-!*.sv
-!*.vh
-!*.vhd
-!*.xdc
-!*.xpr
-!*.tcl
-!*.gitignore
+# OS 임시 파일
+.DS_Store
+Thumbs.db
