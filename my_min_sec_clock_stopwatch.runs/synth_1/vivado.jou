@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 22 21:39:44 2026
+# Process ID: 24512
+# Current directory: D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.runs/synth_1
+# Command line: vivado.exe -log top_clock_stopwatch.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_clock_stopwatch.tcl
+# Log file: D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.runs/synth_1/top_clock_stopwatch.vds
+# Journal file: D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_clock_stopwatch.tcl -notrace

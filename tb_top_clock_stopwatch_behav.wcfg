@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_clock_stopwatch_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_top_clock_stopwatch" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="12188218666fs"></ZoomStartTime>
+      <ZoomEndTime time="14715224667fs"></ZoomEndTime>
+      <Cursor1Time time="14294057000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="221"></NameColumnWidth>
+      <ValueColumnWidth column_width="134"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="28" />
+   <wvobject fp_name="/tb_top_clock_stopwatch/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_clock_stopwatch/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_clock_stopwatch/btn" type="array">
+      <obj_property name="ElementShortName">btn[2:0]</obj_property>
+      <obj_property name="ObjectShortName">btn[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_clock_stopwatch/an" type="array">
+      <obj_property name="ElementShortName">an[3:0]</obj_property>
+      <obj_property name="ObjectShortName">an[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_clock_stopwatch/led" type="array">
+      <obj_property name="ElementShortName">led[3:0]</obj_property>
+      <obj_property name="ObjectShortName">led[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_clock_stopwatch/seg" type="array">
+      <obj_property name="ElementShortName">seg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">seg[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_clock_stopwatch/errors" type="array">
+      <obj_property name="ElementShortName">errors[31:0]</obj_property>
+      <obj_property name="ObjectShortName">errors[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_clock_stopwatch/checks" type="array">
+      <obj_property name="ElementShortName">checks[31:0]</obj_property>
+      <obj_property name="ObjectShortName">checks[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_clock_stopwatch/tick_total" type="array">
+      <obj_property name="ElementShortName">tick_total[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tick_total[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_clock_stopwatch/clock_ms" type="array">
+      <obj_property name="ElementShortName">clock_ms[31:0]</obj_property>
+      <obj_property name="ObjectShortName">clock_ms[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_clock_stopwatch/clock_seconds" type="array">
+      <obj_property name="ElementShortName">clock_seconds[31:0]</obj_property>
+      <obj_property name="ObjectShortName">clock_seconds[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_clock_stopwatch/sw_ms" type="array">
+      <obj_property name="ElementShortName">sw_ms[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sw_ms[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_clock_stopwatch/sw_count" type="array">
+      <obj_property name="ElementShortName">sw_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sw_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_clock_stopwatch/pause_ms" type="array">
+      <obj_property name="ElementShortName">pause_ms[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pause_ms[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_clock_stopwatch/expected_circle" type="logic">
+      <obj_property name="ElementShortName">expected_circle</obj_property>
+      <obj_property name="ObjectShortName">expected_circle</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_clock_stopwatch/display_value" type="array">
+      <obj_property name="ElementShortName">display_value[31:0]</obj_property>
+      <obj_property name="ObjectShortName">display_value[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_clock_stopwatch/digit_value" type="array">
+      <obj_property name="ElementShortName">digit_value[31:0]</obj_property>
+      <obj_property name="ObjectShortName">digit_value[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_clock_stopwatch/digit_index" type="array">
+      <obj_property name="ElementShortName">digit_index[31:0]</obj_property>
+      <obj_property name="ObjectShortName">digit_index[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_clock_stopwatch/seen_digits" type="array">
+      <obj_property name="ElementShortName">seen_digits[3:0]</obj_property>
+      <obj_property name="ObjectShortName">seen_digits[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_clock_stopwatch/saved_sw" type="array">
+      <obj_property name="ElementShortName">saved_sw[31:0]</obj_property>
+      <obj_property name="ObjectShortName">saved_sw[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_clock_stopwatch/entry_tick" type="array">
+      <obj_property name="ElementShortName">entry_tick[31:0]</obj_property>
+      <obj_property name="ObjectShortName">entry_tick[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_clock_stopwatch/saved_clock" type="array">
+      <obj_property name="ElementShortName">saved_clock[31:0]</obj_property>
+      <obj_property name="ObjectShortName">saved_clock[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_clock_stopwatch/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_clock_stopwatch/CLOCK" type="array">
+      <obj_property name="ElementShortName">CLOCK[1:0]</obj_property>
+      <obj_property name="ObjectShortName">CLOCK[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_clock_stopwatch/STOPWATCH" type="array">
+      <obj_property name="ElementShortName">STOPWATCH[1:0]</obj_property>
+      <obj_property name="ObjectShortName">STOPWATCH[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_clock_stopwatch/RUN" type="array">
+      <obj_property name="ElementShortName">RUN[1:0]</obj_property>
+      <obj_property name="ObjectShortName">RUN[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_clock_stopwatch/PAUSE" type="array">
+      <obj_property name="ElementShortName">PAUSE[1:0]</obj_property>
+      <obj_property name="ObjectShortName">PAUSE[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_clock_stopwatch/TICK_CYCLES" type="array">
+      <obj_property name="ElementShortName">TICK_CYCLES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TICK_CYCLES[31:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,299 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 22 21:39:44 2026
+# Process ID: 24512
+# Current directory: D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.runs/synth_1
+# Command line: vivado.exe -log top_clock_stopwatch.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_clock_stopwatch.tcl
+# Log file: D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.runs/synth_1/top_clock_stopwatch.vds
+# Journal file: D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_clock_stopwatch.tcl -notrace
+Command: synth_design -top top_clock_stopwatch -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28564
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1105.863 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_clock_stopwatch' [D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/sources_1/new/top_clock_stopwatch.v:3]
+	Parameter SEG_SIZE_CLOCK bound to: 11 - type: integer 
+	Parameter SEG_SIZE_STOPWATCH bound to: 13 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'btn_debouncer' [D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/sources_1/imports/sources_1/imports/new/btn_debouncer.v:9]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/sources_1/imports/sources_1/new/debouncer.v:9]
+	Parameter DEBOUNCE_LIMIT bound to: 20'b11110100001000111111 
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (1#1) [D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/sources_1/imports/sources_1/new/debouncer.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'btn_debouncer' (2#1) [D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/sources_1/imports/sources_1/imports/new/btn_debouncer.v:9]
+INFO: [Synth 8-6157] synthesizing module 'mode_selector' [D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/sources_1/new/mode_selector.v:4]
+	Parameter CLOCK bound to: 2'b00 
+	Parameter STOPWATCH bound to: 2'b01 
+	Parameter RUN bound to: 2'b10 
+	Parameter PAUSE bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/sources_1/new/mode_selector.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'mode_selector' (3#1) [D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/sources_1/new/mode_selector.v:4]
+INFO: [Synth 8-6157] synthesizing module 'tick_generator' [D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/sources_1/imports/new/tick_generator.v:3]
+	Parameter INPUT_FREQ bound to: 100000000 - type: integer 
+	Parameter TICK_Hz bound to: 1000 - type: integer 
+	Parameter TICK_COUNT bound to: 100000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'tick_generator' (4#1) [D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/sources_1/imports/new/tick_generator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'min_sec_clock' [D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/sources_1/new/min_sec_clock.v:3]
+	Parameter TICK_IN bound to: 1000 - type: integer 
+	Parameter TICK_CLOCK bound to: 1 - type: integer 
+	Parameter TICK_COUNT bound to: 1000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'min_sec_clock' (5#1) [D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/sources_1/new/min_sec_clock.v:3]
+INFO: [Synth 8-6157] synthesizing module 'stopwatch' [D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/sources_1/new/stopwatch.v:3]
+	Parameter CLOCK bound to: 2'b00 
+	Parameter STOPWATCH bound to: 2'b01 
+	Parameter RUN bound to: 2'b10 
+	Parameter PAUSE bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'stopwatch' (6#1) [D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/sources_1/new/stopwatch.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux_clock_or_stopwatch' [D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/sources_1/new/mux_clock_or_stopwatch.v:4]
+	Parameter SEG_SIZE_CLOCK bound to: 11 - type: integer 
+	Parameter SEG_SIZE_STOPWATCH bound to: 13 - type: integer 
+	Parameter SEG_SIZE_H bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux_clock_or_stopwatch' (7#1) [D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/sources_1/new/mux_clock_or_stopwatch.v:4]
+INFO: [Synth 8-6157] synthesizing module 'fnd_controller' [D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/sources_1/imports/new/fnd_controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'bin2bcd4digit' [D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/sources_1/imports/new/fnd_controller.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'bin2bcd4digit' (8#1) [D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/sources_1/imports/new/fnd_controller.v:45]
+INFO: [Synth 8-6157] synthesizing module 'fnd_digit_display' [D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/sources_1/imports/new/fnd_controller.v:60]
+INFO: [Synth 8-226] default block is never used [D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/sources_1/imports/new/fnd_controller.v:121]
+INFO: [Synth 8-6155] done synthesizing module 'fnd_digit_display' (9#1) [D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/sources_1/imports/new/fnd_controller.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'fnd_controller' (10#1) [D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/sources_1/imports/new/fnd_controller.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top_clock_stopwatch' (11#1) [D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/sources_1/new/top_clock_stopwatch.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1105.863 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1105.863 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1105.863 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1105.863 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/constrs_1/imports/digilent-xdc-master/Basys3-Master_orginal.xdc]
+Finished Parsing XDC File [D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/constrs_1/imports/digilent-xdc-master/Basys3-Master_orginal.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/constrs_1/imports/digilent-xdc-master/Basys3-Master_orginal.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_clock_stopwatch_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_clock_stopwatch_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1207.762 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1207.762 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1207.762 ; gain = 101.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1207.762 ; gain = 101.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1207.762 ; gain = 101.898
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'sel_reg' in module 'mode_selector'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   CLOCK |                               00 |                               00
+               STOPWATCH |                               01 |                               01
+                     RUN |                               10 |                               10
+                   PAUSE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sel_reg' using encoding 'sequential' in module 'mode_selector'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1207.762 ; gain = 101.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   20 Bit       Adders := 3     
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input   14 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 3     
+	               17 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input   20 Bit        Muxes := 6     
+	   2 Input   17 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 4     
+	   2 Input   13 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	  11 Input    8 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 8     
+	   9 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 5     
+	   4 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1279.359 ; gain = 173.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1279.359 ; gain = 173.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1319.020 ; gain = 213.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1320.039 ; gain = 214.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1321.844 ; gain = 215.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1321.844 ; gain = 215.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1321.844 ; gain = 215.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1321.844 ; gain = 215.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1321.844 ; gain = 215.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1321.844 ; gain = 215.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    71|
+|3     |LUT1   |    11|
+|4     |LUT2   |    58|
+|5     |LUT3   |    39|
+|6     |LUT4   |   171|
+|7     |LUT5   |   105|
+|8     |LUT6   |   270|
+|9     |MUXF7  |     1|
+|10    |FDCE   |   160|
+|11    |IBUF   |     5|
+|12    |OBUF   |    16|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1321.844 ; gain = 215.980
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 1321.844 ; gain = 114.082
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1321.844 ; gain = 215.980
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1333.914 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 72 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1336.922 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+41 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1336.922 ; gain = 231.059
+INFO: [Common 17-1381] The checkpoint 'D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.runs/synth_1/top_clock_stopwatch.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_clock_stopwatch_utilization_synth.rpt -pb top_clock_stopwatch_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 22 21:40:27 2026...

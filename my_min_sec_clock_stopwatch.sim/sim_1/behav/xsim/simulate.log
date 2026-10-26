@@ -1,0 +1,12 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+[TEST] Default CLOCK and minute/second FND rollover
+[TEST] btnL -> STOPWATCH, FND 0000
+[TEST] btnR RUN and btnR clear/standby
+[TEST] btnC PAUSE and resume before five seconds
+[TEST] Fresh PAUSE timeout: 4999 ticks off, 5000 ticks on
+[TEST] Twelve circle positions, 200 ms per step, wraparound
+[TEST] btnC exits circle and resumes RUN
+[TEST] RUN -> btnR standby -> btnL CLOCK, elapsed time retained
+[PASS] All scenarios passed (7256097 checks, 71470 functional ms).
+$finish called at time : 14294057 ns : File "D:/Project/FPGA/ai2/my_min_sec_clock_stopwatch/my_min_sec_clock_stopwatch.srcs/sim_1/new/tb_top_clock_stopwatch.v" Line 271

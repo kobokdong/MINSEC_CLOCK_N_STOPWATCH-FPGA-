@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../my_min_sec_clock_stopwatch.srcs/sources_1/imports/sources_1/imports/new/btn_debouncer.v" \
+"../../../../my_min_sec_clock_stopwatch.srcs/sources_1/imports/sources_1/new/debouncer.v" \
+"../../../../my_min_sec_clock_stopwatch.srcs/sources_1/imports/new/fnd_controller.v" \
+"../../../../my_min_sec_clock_stopwatch.srcs/sources_1/new/min_sec_clock.v" \
+"../../../../my_min_sec_clock_stopwatch.srcs/sources_1/new/mode_selector.v" \
+"../../../../my_min_sec_clock_stopwatch.srcs/sources_1/new/mux_clock_or_stopwatch.v" \
+"../../../../my_min_sec_clock_stopwatch.srcs/sources_1/new/stopwatch.v" \
+"../../../../my_min_sec_clock_stopwatch.srcs/sources_1/imports/new/tick_generator.v" \
+"../../../../my_min_sec_clock_stopwatch.srcs/sources_1/new/top_clock_stopwatch.v" \
+"../../../../my_min_sec_clock_stopwatch.srcs/sim_1/new/tb_top_clock_stopwatch.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
